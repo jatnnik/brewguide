@@ -7,14 +7,25 @@ import "@fontsource/ia-writer-quattro"
     <meta charset="utf-8" />
     <link rel="icon" href="https://emojicdn.elk.sh/☕" />
     <link rel="apple-touch-icon" href="icon-192x192.png" />
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+      href="splash.png"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Brew" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
     <title>Brewguide</title>
+    <style>
+      body {
+        -webkit-user-select: none;
+      }
+    </style>
   </head>
   <body class="bg-gray-50 text-gray-700 antialiased">
     <slot />
