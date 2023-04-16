@@ -10,6 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.3.0"
+    "@astrojs/preact": "^2.1.0",
+    "@astrojs/tailwind": "^3.1.1",
+    "@fontsource/ia-writer-quattro": "^4.5.3",
+    "astro": "^2.3.0",
+    "preact": "^10.6.5",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.7"
   }
 }
