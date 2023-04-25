@@ -4,7 +4,6 @@ amountOfWater: "600"
 caffeineSource: "Kaffeepulver"
 caffeineWeight: "38g"
 waterTemperature: "96°C (30sek abkühlen lassen)"
-brewTime: "4-5"
 grind: "Mittel"
 ---
 

@@ -5,6 +5,5 @@ caffeineSource: "Tee"
 caffeineWeight: "4-5g"
 brewTime: "2"
 waterTemperature: "70°C (3:30min abkühlen lassen)"
+brewTime: "2"
 ---
-
-Teekanne vorher mit heißem Wasser vorwärmen.

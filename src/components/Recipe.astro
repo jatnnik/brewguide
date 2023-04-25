@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content"
 import { getEntryBySlug } from "astro:content"
+import { TriggerTimerButton } from "./Timer"
 
 interface Props {
   recipe: CollectionEntry<"recipes">
@@ -28,4 +29,9 @@ const { Content } = await entry.render()
     {recipe.data.brewTime && <li>{recipe.data.brewTime}min Brühzeit</li>}
   </ol>
   <Content />
+  {
+    recipe.data.brewTime && (
+      <TriggerTimerButton client:idle brewTime={recipe.data.brewTime} />
+    )
+  }
 </div>
