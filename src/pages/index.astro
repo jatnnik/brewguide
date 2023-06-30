@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content"
 
 import Container from "../components/Container.astro"
-import SoundIcon from "../components/SoundIcon.astro"
 import Layout from "../layouts/Layout.astro"
 import Recipe from "../components/Recipe.astro"
 import { Nav } from "../components/Nav"
@@ -24,7 +23,7 @@ const navOptions = allRecipes.map((recipe) => ({
         href="https://open.spotify.com/playlist/7aOX137yLhicZzbshZ1jfw?si=09c3458213604328"
         target="_blank"
       >
-        <SoundIcon /> Playlist
+        Playlist
       </a>
     </header>
 
