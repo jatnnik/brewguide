@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from "astro:content"
+import { getEntryBySlug } from "astro:content"
+
+interface Props {
+  recipe: CollectionEntry<"brews">
+}
+
+const { recipe } = Astro.props
+---
+
+<li
+  id={recipe.slug}
+  class="scroll-my-6 rounded-xl border border-gray-200 bg-white shadow-sm"
+>
+  <div class="rounded-t-xl border-b border-gray-200 bg-gray-50 p-4">
+    <h2 class="text-lg font-semibold text-gray-900">{recipe.data.title}</h2>
+  </div>
+  <div class="p-4">
+    <ul class="space-y-2">
+      <li>{recipe.data.grams}g {recipe.data.caffeineSource}</li>
+      <li>{recipe.data.amountOfWater}ml Wasser</li>
+    </ul>
+  </div>
+</li>
