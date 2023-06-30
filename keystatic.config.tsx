@@ -16,7 +16,6 @@ export default config({
           label: "Brühmaterial (Espresso, Kaffee, Tee)",
         }),
         grams: fields.text({ label: "Gramm" }),
-        grind: fields.text({ label: "Mahlgrad" }),
         amountOfWater: fields.text({ label: "Wasser (ml)" }),
         brewTime: fields.text({ label: "Bezugszeit" }),
         additionalStuff: fields.array(fields.text({ label: "Zutat" }), {
