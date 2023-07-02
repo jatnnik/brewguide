@@ -1,18 +1,19 @@
 import { z, defineCollection } from "astro:content"
 
-const recipeCollection = defineCollection({
+const brewCollection = defineCollection({
+  type: "content",
   schema: z.object({
     title: z.string(),
     amountOfWater: z.string().optional(),
     waterTemperature: z.string().optional(),
-    caffeineSource: z.enum(["Tee", "Espresso", "Kaffeepulver"]),
-    caffeineWeight: z.string(),
+    caffeineSource: z.enum(["Tee", "Espresso", "Kaffee"]),
+    grams: z.string(),
     additionalStuff: z.string().optional(),
     brewTime: z.string().optional(),
     grind: z.string().optional(),
-  }),
+  })
 })
 
 export const collections = {
-  recipes: recipeCollection,
+  brews: brewCollection
 }

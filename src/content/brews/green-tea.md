@@ -2,7 +2,7 @@
 title: "Grüner Tee"
 amountOfWater: "300"
 caffeineSource: "Tee"
-caffeineWeight: "4-5g"
-brewTime: "2"
+grams: "4-5"
+brewTime: "2min"
 waterTemperature: "70°C (3:30min abkühlen lassen)"
 ---

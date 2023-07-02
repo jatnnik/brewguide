@@ -2,7 +2,7 @@
 title: "Grandpa Style Tee"
 amountOfWater: "350"
 caffeineSource: "Tee"
-caffeineWeight: "1-3g"
+grams: "1-3"
 waterTemperature: "96°C (30sek abkühlen lassen)"
 ---
 

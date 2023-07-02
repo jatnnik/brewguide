@@ -1,12 +1,8 @@
----
-import "@fontsource/ia-writer-quattro"
-import { Timer } from "../components/Timer"
----
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="https://emojicdn.elk.sh/☕" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="apple-touch-icon" href="icon-192x192.png" />
     <link
       rel="apple-touch-startup-image"
@@ -21,15 +17,19 @@ import { Timer } from "../components/Timer"
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-    <title>Brewguide</title>
-    <style>
+    <title>brew</title>
+    <style is:global>
       body {
         -webkit-user-select: none;
       }
+
+      ol li {
+        list-style-type: decimal;
+        list-style-position: inside;
+      }
     </style>
   </head>
-  <body class="bg-gray-50 text-gray-700 antialiased">
+  <body class="bg-gray-50 p-4 pb-32 text-gray-700 antialiased">
     <slot />
-    <Timer client:idle />
   </body>
 </html>
