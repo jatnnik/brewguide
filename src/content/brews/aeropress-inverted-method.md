@@ -4,7 +4,6 @@ caffeineSource: Kaffee
 grams: '16'
 amountOfWater: '200'
 brewTime: 30sek
-additionalStuff: []
 ---
 1. Filter mit warmem Wasser ausspülen
 1. Aeropress zu 3/4 mit Wasser füllen
