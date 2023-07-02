@@ -5,8 +5,14 @@ import { Icon } from "astro-icon"
 import Container from "../components/Container.astro"
 import Layout from "../layouts/Layout.astro"
 import Brew from "../components/Brew.astro"
+import { Nav } from "../components/Nav"
 
 const brews = await getCollection("brews")
+
+const navOptions = brews.map((brew) => ({
+  value: brew.slug,
+  label: brew.data.title,
+}))
 ---
 
 <Layout>
@@ -23,8 +29,10 @@ const brews = await getCollection("brews")
       </a>
     </header>
 
+    <Nav options={navOptions} client:load />
+
     <ul class="space-y-8">
-      {brews.map((brew) => <Brew slug={brew.slug} />)}
+      {brews.map((brew) => <Brew brew={brew} />)}
     </ul>
   </Container>
 </Layout>
