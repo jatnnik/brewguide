@@ -11,10 +11,10 @@ const { Content } = await brew.render()
 
 <li
   id={brew.slug}
-  class="scroll-my-6 rounded-xl border border-gray-200 bg-white shadow-sm"
+  class="scroll-my-6 rounded-xl border border-stone-200 bg-white shadow-sm"
 >
-  <div class="rounded-t-xl border-b border-gray-200 bg-gray-50 p-4">
-    <h2 class="text-lg font-semibold text-gray-900">{brew.data.title}</h2>
+  <div class="rounded-t-xl border-b border-stone-200 bg-stone-50 p-4">
+    <h2 class="text-lg font-bold text-stone-900">{brew.data.title}</h2>
   </div>
   <div class="space-y-4 p-4">
     <ul class="space-y-1">
@@ -32,11 +32,16 @@ const { Content } = await brew.render()
         ) : null
       }
       {brew.data.brewTime ? <li>{brew.data.brewTime} Bezugszeit</li> : null}
+      {brew.data.additionalStuff ? <li>{brew.data.additionalStuff}</li> : null}
     </ul>
 
-    {brew.body && <div>
-      <h3 class="mb-1 font-medium">Anleitung</h3>
-      <Content />
-    </div>}
+    {
+      brew.body && (
+        <div>
+          <h3 class="mb-1 font-semibold">Anleitung</h3>
+          <Content />
+        </div>
+      )
+    }
   </div>
 </li>

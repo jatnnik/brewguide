@@ -6,7 +6,7 @@ const brewCollection = defineCollection({
     title: z.string(),
     amountOfWater: z.string().optional(),
     waterTemperature: z.string().optional(),
-    caffeineSource: z.enum(["Tee", "Espresso", "Kaffee", "Matcha"]),
+    caffeineSource: z.string(),
     grams: z.string(),
     additionalStuff: z.string().optional(),
     brewTime: z.string().optional(),

@@ -3,6 +3,13 @@
     <meta charset="utf-8" />
     <link rel="icon" href="https://emojicdn.elk.sh/☕" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=bricolage-grotesque:400,500,700"
+      rel="stylesheet"
+    />
+
     <link rel="apple-touch-icon" href="icon-192x192.png" />
     <link
       rel="apple-touch-startup-image"
@@ -11,12 +18,9 @@
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Brew" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-title" content="Brew" />
+    <meta name="mobile-web-app-status-bar-style" content="black-translucent" />
     <title>brew</title>
     <style is:global>
       body {
@@ -24,12 +28,16 @@
       }
 
       ol li {
+        line-height: 1.5;
+        list-style-position: outside;
         list-style-type: decimal;
-        list-style-position: inside;
+        margin-block-start: 6px;
+        margin-left: 17px;
+        padding-left: 4px;
       }
     </style>
   </head>
-  <body class="bg-gray-50 p-4 pb-32 text-gray-700 antialiased">
+  <body class="bg-stone-50 p-4 pb-32 text-stone-700 antialiased">
     <slot />
   </body>
 </html>
